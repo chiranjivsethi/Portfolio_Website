@@ -1,0 +1,195 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Fira Code", monospace;
+  overflow: hidden;
+  color: #fff;
+  height: 100vh;
+}
+
+.side_bar {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  top: 50%;
+  right: 0;
+  transform: translate(30%, -50%) rotate(90deg);
+  letter-spacing: 2px;
+  font-size: 14pt;
+  background-color: #121212;
+  z-index: 1;
+  font-size: 125%;
+}
+
+.icons {
+  padding-bottom: 0.5rem;
+}
+
+.icons i {
+  transform: rotate(-90deg);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  height: 64px;
+  background-color: #121212;
+}
+
+.menu_nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  letter-spacing: 2px;
+  width: 65%;
+  font-size: 125%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  transition: all 0.5s ease-out;
+}
+
+.resume_button {
+  height: 100%;
+  border: 3px solid red;
+  font-weight: 500;
+  border-radius: 7px;
+  color: red;
+  padding: 0.25rem 0.5rem;
+}
+.resume_button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+}
+h1.lg_heading, h2.lg_heading, h3.lg_heading {
+  font-size: 4rem;
+}
+h1.sm_heading, h2.sm_heading, h3.sm_heading {
+  margin-bottom: 1rem;
+}
+
+.text_secondary {
+  color: red;
+}
+
+section#home {
+  padding-top: 20rem;
+  padding-left: 2rem;
+}
+
+section#about {
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+section#about h1, section#about h2, section#about h3 {
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+section#about h1.lg_heading, section#about h2.lg_heading, section#about h3.lg_heading {
+  font-size: 3rem;
+}
+section#about h1.sm_heading, section#about h2.sm_heading, section#about h3.sm_heading {
+  margin-bottom: 1rem;
+}
+section#about .info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  margin-right: 14rem;
+  font-size: 1.2rem;
+  color: #ababab;
+}
+section#about .intro {
+  margin-top: 0.3rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+  font-size: 1.4rem;
+}
+section#about .info_bar {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+section#contact {
+  padding-top: 15rem;
+  text-align: center;
+  align-items: center;
+}
+section#contact h1.lg_heading, section#contact h2.lg_heading, section#contact h3.lg_heading {
+  font-size: 3rem;
+}
+section#contact p {
+  font-size: 150%;
+}
+
+.reach_me_button {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 10rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 150%;
+  border: 3px solid red;
+  border-radius: 7px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reach_me_button:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
