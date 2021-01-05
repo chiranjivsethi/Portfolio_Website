@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/i87j8n3nl8d3/public_html/
     -/bin/cp/ index.html $DEPLOYPATH
-    -/bin/cp/ main.css $DEPLOYPATH
+    -/bin/cp/ dist\main.css $DEPLOYPATH
